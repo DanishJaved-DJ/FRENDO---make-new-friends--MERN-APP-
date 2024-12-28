@@ -27,6 +27,7 @@ const signupController = async (req,res)=>{
     }
 
     //multer
+    
     const avatarLocalPath = req.files?.avatar[0]?.path;
     console.log("localPath",avatarLocalPath);
     
