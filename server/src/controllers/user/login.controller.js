@@ -47,11 +47,12 @@ const loginController = async (req, res) => {
       .json(
         new ApiResponse(
           200,
+           "User logged in successfully",
           {
             user: loggedInUser,
             accessToken,
           },
-          "User logged in successfully"
+         
         )
       );
   } catch (err) {
